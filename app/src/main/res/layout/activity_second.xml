@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#474747">
+    android:background="#474747"
+    tools:context=".SecondActivity">
 
     <ImageView
         android:id="@+id/imageViewPC"
@@ -27,7 +28,7 @@
         app:srcCompat="@drawable/ic_launcher_foreground" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/TextViewRestart"
         android:layout_width="254dp"
         android:layout_height="93dp"
         android:layout_marginStart="73dp"

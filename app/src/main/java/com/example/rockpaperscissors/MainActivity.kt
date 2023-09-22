@@ -14,17 +14,26 @@ class MainActivity : AppCompatActivity() {
     }
 
 
-    fun onClick(view: View?) {
-        val button = view as? ImageButton
-        button ?: return
-        val v = findViewById<TextView>(R.id.textView)
-        v.text = button.id.toString()
+    fun onClickRock(button: View){
+        openActivity("Rock")
+    }
+    fun onClickScissors(button: View){
+        openActivity("Scissors")
+    }
+    fun onClickPaper(button: View){
+        openActivity("Paper")
+    }
+
+    private fun openActivity(choice : String ) {
         val second = Intent(this, SecondActivity::class.java).apply {
            val bundle = Bundle().apply {
-                putInt("choice", button.id)
+                putString("choice", choice)
             }
             putExtras(bundle)
         }
         startActivity(second)
     }
+
+
+
 }
