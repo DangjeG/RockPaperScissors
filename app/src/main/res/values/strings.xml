@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Rock Paper Scissors</string>
+    <string name="textview">TextView</string>
+    <string name="vs">VS</string>
+</resources>
